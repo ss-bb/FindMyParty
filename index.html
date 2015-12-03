@@ -31,7 +31,7 @@
 					<div class="banner-text" id="bannertext">
 						<h1 class="hostyle" id="heads">Find My Trip</h1>
 						<p class="pstyle">Lorem ipsum dolor sit amet</p>
-						<a href="#categorie" class="page-scroll arrow"><i class="fa fa-angle-down"></i></a> 
+						<a href="#categorie" class="page-scroll arrow active"><i class="fa fa-angle-down"></i></a> 
 					</div>
 				</div>
 			</div>
@@ -58,7 +58,10 @@
 						<a class="page-scroll" href="#categorie">catégorie</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#contact">Contact</a>
+						<a class="page-scroll" href="#testimonials">Testimonial</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#team">Equipe</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -86,9 +89,9 @@
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="sorting pull-left">
-						<div class="filter pull-left filimg" data-filter="all">Show All</div>
-						<div class="filter pull-left filimg" data-filter=".category-1">in my city</div>
-						<div class="filter pull-left filimg" data-filter=".category-2">around the world</div>
+						<div class="filter pull-left filimg" data-filter="all">in my city</div>
+						<div class="filter pull-left filimg" data-filter=".category-1">elsewhere</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -175,7 +178,7 @@
                                         </div>
                                         <div class="testimonial-author">
                                             <span class="name">Olivier goyon</span>
-                                            <p class="small">Directeur Web FindMyTrip</p>
+                                            <p class="small">un nain connu</p>
                                             <div class="stars">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -222,8 +225,8 @@
                                             <img src="images/gauthier_tete.jpg" class="img-circle img-responsive" alt="">
                                         </div>
                                         <div class="testimonial-author">
-                                            <span class="name">un nain connu</span>
-                                            <p class="small">CEO de moncul</p>
+                                            <span class="name">Gau</span>
+                                            <p class="small">CEO</p>
                                             <div class="stars">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -526,6 +529,34 @@
 				});
 
 			}
+
+			(function($) {
+			    "use strict"; // Start of use strict
+
+			    $(".about-carousel").owlCarousel({
+			        items: 3,
+			        navigation: true,
+			        pagination: false,
+			        navigationText: [
+			            "<i class='fa fa-angle-left'></i>",
+			            "<i class='fa fa-angle-right'></i>"
+			        ],
+			    });
+
+			    $(".testimonials-carousel").owlCarousel({
+			        singleItem: true,
+			        navigation: true,
+			        pagination: true,
+			        autoHeight: true,
+			        navigationText: [
+			            "<i class='fa fa-angle-left'></i>",
+			            "<i class='fa fa-angle-right'></i>"
+			        ],
+			        transitionStyle: "backSlide"
+			    });
+
+
+			})(jQuery);
 
 		</script>
 	</body>
