@@ -12,8 +12,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,700italic,900,400italic,300italic' rel='stylesheet' type='text/css'>
 	<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+	<link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+	<link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script>
@@ -31,6 +31,7 @@
 					<div class="banner-text" id="bannertext">
 						<h1 class="hostyle" id="heads">Find My Trip</h1>
 						<p class="pstyle">Lorem ipsum dolor sit amet</p>
+						<p class="pstyle" id="localisation"></p>
 						<a href="#categorie" class="page-scroll arrow active"><i class="fa fa-angle-down"></i></a> 
 					</div>
 				</div>
@@ -66,7 +67,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+						<button href="#" class="btn btn-primary btn-md" role="button" data-toggle="modal" data-target="#login-modal" style="margin-top:10px;">Connexion</button>
 					</li>
 				</ul>
 			</div>
@@ -91,61 +92,60 @@
 					<div class="sorting pull-left">
 						<div class="filter pull-left filimg" data-filter="all">in my city</div>
 						<div class="filter pull-left filimg" data-filter=".category-1">elsewhere</div>
-						</div>
 					</div>
 				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="galleryimg" id="galleryimg">
-						<div class="grid mix category-2 col-md-4 col-sm-6 col-xs-6" data-myorder="1">
-							<figure class="effect-Beauty">
-								<img src="images/soiree.jpg" alt="soiree/fete"/>
-								<figcaption>
-									<h2>appartement <span>Party<span></h2>
-									<p>Une bonne phrase d'acroche</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
-						<div class="grid mix category-1 col-md-4 col-sm-6 col-xs-6" data-myorder="2">
-							<figure class="effect-Beauty">
-								<img src="images/sport.jpg" alt="sport"/>
-								<figcaption>
-									<h2>Sport <span>Sport</span></h2>
-									<p>Une bonne phrase d'acroche</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
-						<div class="grid mix category-1 col-md-4 col-sm-6 col-xs-6" data-myorder="3">
-							<figure class="effect-Beauty">
-								<img src="images/voyage.jpg" alt="voyage"/>
-								<figcaption>
-									<h2>voyage <span>Voyage</span></h2>
-									<p>Plus loin que la nuit et le jour</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
-						<div class="grid mix category-2 col-md-4 col-sm-6 col-xs-6" data-myorder="4">
-							<figure class="effect-Beauty">
-								<img src="images/visite.jpg" alt="visite"/>
-								<figcaption>
-									<h2>Visite <span>Visite</span></h2>
-									<p></p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
-						<div class="grid mix category-2 col-md-4 col-sm-6 col-xs-6" data-myorder="4">
-							<figure class="effect-Beauty">
-								<img src="images/latin.jpg" alt="lorem ipsum"/>
-								<figcaption>
-									<h2>Lorem <span>Ipsum</span></h2>
-									<p>dolor sit amet</p>
-									<a href="#">View more</a>
-								</figcaption>			
-							</figure>
-						</div>
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="galleryimg" id="galleryimg">
+					<div class="grid mix category-2 col-md-4 col-sm-6 col-xs-6" data-myorder="1">
+						<figure class="effect-Beauty">
+							<img src="images/soiree.jpg" alt="soiree/fete"/>
+							<figcaption>
+								<h2>appartement <span>Party<span></h2>
+								<p>Une bonne phrase d'acroche</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="grid mix category-1 col-md-4 col-sm-6 col-xs-6" data-myorder="2">
+						<figure class="effect-Beauty">
+							<img src="images/sport.jpg" alt="sport"/>
+							<figcaption>
+								<h2>Sport <span>Sport</span></h2>
+								<p>Une bonne phrase d'acroche</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="grid mix category-1 col-md-4 col-sm-6 col-xs-6" data-myorder="3">
+						<figure class="effect-Beauty">
+							<img src="images/voyage.jpg" alt="voyage"/>
+							<figcaption>
+								<h2>voyage <span>Voyage</span></h2>
+								<p>Plus loin que la nuit et le jour</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="grid mix category-2 col-md-4 col-sm-6 col-xs-6" data-myorder="4">
+						<figure class="effect-Beauty">
+							<img src="images/visite.jpg" alt="visite"/>
+							<figcaption>
+								<h2>Visite <span>Visite</span></h2>
+								<p></p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
+					</div>
+					<div class="grid mix category-2 col-md-4 col-sm-6 col-xs-6" data-myorder="4">
+						<figure class="effect-Beauty">
+							<img src="images/latin.jpg" alt="lorem ipsum"/>
+							<figcaption>
+								<h2>Lorem <span>Ipsum</span></h2>
+								<p>dolor sit amet</p>
+								<a href="#">View more</a>
+							</figcaption>			
+						</figure>
 					</div>
 				</div>
 			</div>
@@ -155,8 +155,8 @@
 
 	<div  class="testimonials bg-gray" id="testimonials">
 		<div class="container wow fadeIn">
-            <div class="row">
-            	<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="alldesc left">
 						<div class="col-md-6 col-sm-6 col-xs-12 centertext">
 							<p class="all-td">Les retours de nos </p>
@@ -164,87 +164,87 @@
 						</div>
 					</div>
 				</div>
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="testimonials-carousel">
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"CA MARCHE !"</p>
-                                    <hr class="colored">
-                                    <p class="quote">C'est incroyable, c'est magnifique, c'est beau , ca marche , c'est fait, je rentre chez ma mere.</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="images/olivier_tete.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Olivier goyon</span>
-                                            <p class="small">un nain connu</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Lorem ipsum dolor sit amet"</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="images/romain_tete.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Ave Cesar</span>
-                                            <p class="small">Empereur de Rome</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Je sais pas"</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="images/gauthier_tete.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Gau</span>
-                                            <p class="small">CEO</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+				<div class="col-lg-10 col-lg-offset-1">
+					<div class="testimonials-carousel">
+						<div class="item">
+							<div class="row">
+								<div class="col-lg-12">
+									<p class="lead">"CA MARCHE !"</p>
+									<hr class="colored">
+									<p class="quote">C'est incroyable, c'est magnifique, c'est beau , ca marche , c'est fait, je rentre chez ma mere.</p>
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="images/olivier_tete.jpg" class="img-circle img-responsive" alt="">
+										</div>
+										<div class="testimonial-author">
+											<span class="name">Olivier goyon</span>
+											<p class="small">un nain connu</p>
+											<div class="stars">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-lg-12">
+									<p class="lead">"Lorem ipsum dolor sit amet"</p>
+									<hr class="colored">
+									<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="images/romain_tete.jpg" class="img-circle img-responsive" alt="">
+										</div>
+										<div class="testimonial-author">
+											<span class="name">Ave Cesar</span>
+											<p class="small">Empereur de Rome</p>
+											<div class="stars">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-lg-12">
+									<p class="lead">"Je sais pas"</p>
+									<hr class="colored">
+									<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="images/gauthier_tete.jpg" class="img-circle img-responsive" alt="">
+										</div>
+										<div class="testimonial-author">
+											<span class="name">Gau Machand</span>
+											<p class="small">CEO</p>
+											<div class="stars">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-    <div class="team" id="team">
+	<div class="team" id="team">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -255,122 +255,122 @@
 						</div>
 					</div>
 				</div>
-	            <div class="row content-row">
-	                <div class="col-lg-12">
-	                    <div class="about-carousel">
-	                        <div class="item">
-	                            <img src="images/romain1.jpg" class="img-responsive" alt="">
-	                            <div class="caption">
-	                                <h3>Romain Bollengier-Stragier</h3>
-	                                <hr class="colored">
-	                                <p>Directeur Marketing & Vente</p>
-	                                <ul class="list-inline social">
-	                                    <li>
-	                                        <a href="https://www.facebook.com/RSTRBLG"><i class="fa fa-facebook fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-instagram fa-fw"></i></a>
-	                                    </li>
-	                                </ul>
-	                            </div>
-	                        </div>
-	                        <div class="item">
-	                            <img src="images/olivier1.jpg" class="img-responsive" alt="">
-	                            <div class="caption">
-	                                <h3>Olivier Goyon</h3>
-	                                <hr class="colored">
-	                                <p>Directeur Web et Design</p>
-	                                <ul class="list-inline social">
-	                                    <li>
-	                                        <a href="https://www.facebook.com/olivier.goyon"><i class="fa fa-facebook fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
-	                                    </li>
-	                                </ul>
-	                            </div>
-	                        </div>
-	                        <div class="item">
-	                            <img src="images/gauthier1.jpg" class="img-responsive" alt="">
-	                            <div class="caption">
-	                                <h3>Gauthier Marchand</h3>
-	                                <hr class="colored">
-	                                <p>Directeur Mobile et Design</p>
-	                                <ul class="list-inline social">
-	                                    <li>
-	                                        <a href="https://www.facebook.com/gau.marchand"><i class="fa fa-facebook fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-	                                    </li>
-	                                </ul>
-	                            </div>
-	                        </div>
-	                        <div class="item">
-	                            <img src="images/gauthier2.jpg" class="img-responsive" alt="">
-	                            <div class="caption">
-	                                <h3>Gauthier Marchand</h3>
-	                                <hr class="colored">
-	                                <p>Directeur Mobile et Design</p>
-	                                <ul class="list-inline social">
-	                                    <li>
-	                                        <a href="https://www.facebook.com/gau.marchand"><i class="fa fa-facebook fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-	                                    </li>
-	                                </ul>
-	                            </div>
-	                        </div>
-	                        <div class="item">
-	                            <img src="images/olivier2.jpg" class="img-responsive" alt="">
-	                            <div class="caption">
-	                                <h3>Olivier Goyon</h3>
-	                                <hr class="colored">
-	                                <p>Directeur Web et Design</p>
-	                                <ul class="list-inline social">
-	                                    <li>
-	                                        <a href="https://www.facebook.com/olivier.goyon"><i class="fa fa-facebook fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
-	                                    </li>
-	                                </ul>
-	                            </div>
-	                        </div>
-	                        <div class="item">
-	                            <img src="images/romain2.jpg" class="img-responsive" alt="">
-	                            <div class="caption">
-	                                <h3>Romain Bollengier-Stragier</h3>
-	                                <hr class="colored">
-	                                <p>Directeur Marketing & Vente</p>
-	                                <ul class="list-inline social">
-	                                    <li>
-	                                        <a href="https://www.facebook.com/RSTRBLG"><i class="fa fa-facebook fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="#"><i class="fa fa-instagram fa-fw"></i></a>
-	                                    </li>
-	                                </ul>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+				<div class="row content-row">
+					<div class="col-lg-12">
+						<div class="about-carousel">
+							<div class="item">
+								<img src="images/romain1.jpg" class="img-responsive" alt="">
+								<div class="caption">
+									<h3>Romain Bollengier-Stragier</h3>
+									<hr class="colored">
+									<p>Directeur Marketing & Vente</p>
+									<ul class="list-inline social">
+										<li>
+											<a href="https://www.facebook.com/RSTRBLG"><i class="fa fa-facebook fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-instagram fa-fw"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/olivier1.jpg" class="img-responsive" alt="">
+								<div class="caption">
+									<h3>Olivier Goyon</h3>
+									<hr class="colored">
+									<p>Directeur Web et Design</p>
+									<ul class="list-inline social">
+										<li>
+											<a href="https://www.facebook.com/olivier.goyon"><i class="fa fa-facebook fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-github fa-fw"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/gauthier1.jpg" class="img-responsive" alt="">
+								<div class="caption">
+									<h3>Gauthier Marchand</h3>
+									<hr class="colored">
+									<p>Directeur Mobile et Design</p>
+									<ul class="list-inline social">
+										<li>
+											<a href="https://www.facebook.com/gau.marchand"><i class="fa fa-facebook fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/gauthier2.jpg" class="img-responsive" alt="">
+								<div class="caption">
+									<h3>Gauthier Marchand</h3>
+									<hr class="colored">
+									<p>Directeur Mobile et Design</p>
+									<ul class="list-inline social">
+										<li>
+											<a href="https://www.facebook.com/gau.marchand"><i class="fa fa-facebook fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/olivier2.jpg" class="img-responsive" alt="">
+								<div class="caption">
+									<h3>Olivier Goyon</h3>
+									<hr class="colored">
+									<p>Directeur Web et Design</p>
+									<ul class="list-inline social">
+										<li>
+											<a href="https://www.facebook.com/olivier.goyon"><i class="fa fa-facebook fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-github fa-fw"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<img src="images/romain2.jpg" class="img-responsive" alt="">
+								<div class="caption">
+									<h3>Romain Bollengier-Stragier</h3>
+									<hr class="colored">
+									<p>Directeur Marketing & Vente</p>
+									<ul class="list-inline social">
+										<li>
+											<a href="https://www.facebook.com/RSTRBLG"><i class="fa fa-facebook fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-instagram fa-fw"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<footer class="foot"> 
 		<div class="container">
@@ -387,177 +387,95 @@
 					</ul>
 				</div>
 			</div>
-		</footer>
-		<script src="js/bootstrap.min.js"></script> 
-		<script src="js/typed.js" type="text/javascript"></script> 
-		<script src="js/jquery.mixitup.js" type="text/javascript"></script> 
-		<script type="text/javascript" src="js/jquery.countTo.js"></script> 
-		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script> 
-		<script type="text/javascript" src="js/jquery.quovolver.js"></script>
-	    <script src="js/owl.carousel.js"></script>
-	    <!-- Vitality Theme Scripts -->
-	    <script src="js/vitality.js"></script>
-		<script>
-			$(function(){
-				var windowH = $(window).height();
-				var bannerH = $('#banner').height();
-				if(windowH > bannerH) {                            
-					$('#banner').css({'height':($(window).height() - 68)+'px'});
-					$('#bannertext').css({'height':($(window).height() - 68)+'px'});
-				}                                                                               
-				$(window).resize(function(){
-					var windowH = $(window).height();
-					var bannerH = $('#banner').height();
-					var differenceH = windowH - bannerH;
-					var newH = bannerH + differenceH;
-					var truecontentH = $('#bannertext').height();
-					if(windowH < truecontentH) {
-						$('#banner').css({'height': (newH - 68)+'px'});
-						$('#bannertext').css({'height': (newH - 68)+'px'});
-					}
-					if(windowH > truecontentH) {
-						$('#banner').css({'height': (newH - 68)+'px'});
-						$('#bannertext').css({'height': (newH - 68)+'px'});
-					}
+		</div>
+	</footer>
 
-				})          
-			});
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img-circle" id="img_logo" src="tmp.jpg">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div id="div-forms">
+					<form id="login-form">
+						<div class="modal-body">
+							<div>
+								<i class="fa fa-envelope"></i><input id="login_username" type="text" placeholder="Username" required>
+							</div>
+							<div>
+								<i class="fa fa-lock"></i><input id="login_password" type="password" placeholder="Password" required>
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox"> Remember me</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+							</div>
+							<div>
+								<button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+								<button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+							</div>
+						</div>
+					</form>
+					<!-- End # Login Form -->
+					
+					<!-- Begin | Lost Password Form -->
+					<form id="lost-form" style="display:none;">
+						<div class="modal-body">
+							<input id="lost_email" type="text" placeholder="E-Mail" required>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+							</div>
+							<div>
+								<button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+								<button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+							</div>
+						</div>
+					</form>
+					<!-- End | Lost Password Form -->
+					
+					<!-- Begin | Register Form -->
+					<form id="register-form" style="display:none;">
+						<div class="modal-body">
+							<input id="register_username" type="text" placeholder="Username" required>
+							<input id="register_email" type="text" placeholder="E-Mail" required>
+							<input id="register_password" type="password" placeholder="Password" required>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+							</div>
+							<div>
+								<button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+								<button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+							</div>
+						</div>
+					</form>
+					<!-- End | Register Form -->
+					
+				</div>
+				<!-- End # DIV Form -->
+				
+			</div>
+		</div>
+	</div>
 
-			$(function(){
-				$('#galleryimg').mixItUp();
-			});
-			/*$('.timer').each(count);*/
-			jQuery(function ($) {
-			// custom formatting example
-			$('.timer').data('countToOptions', {
-				formatter: function (value, options) {
-					return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-				}
-			});
-			
-			// start all the timers
-			$('#gallery').waypoint(function() {
-				$('.timer').each(count);
-			});
-
-			function count(options) {
-				var $this = $(this);
-				options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-				$this.countTo(options);
-			}
-		});
-
-
-			$('.quotes').quovolver({
-				equalHeight   : true
-			});
-
-
-		</script>
-		<script>
-
-			$(document).ready(function () {
-
-				$(document).on("scroll", onScroll);
-
-
-
-				$('a[href^="#"]').on('click', function (e) {
-
-					e.preventDefault();
-
-					$(document).off("scroll");
-
-
-
-					$('a').each(function () {
-
-						$(this).removeClass('active');
-
-					})
-
-					$(this).addClass('active');
-
-
-
-					var target = this.hash;
-
-					$target = $(target);
-
-					$('html, body').stop().animate({
-
-						'scrollTop': $target.offset().top
-
-					}, 500, 'swing', function () {
-
-						window.location.hash = target;
-
-						$(document).on("scroll", onScroll);
-
-					});
-
-				});
-
-			});
-
-
-
-			function onScroll(event){
-
-				var scrollPosition = $(document).scrollTop();
-
-				$('.nav li a').each(function () {
-
-					var currentLink = $(this);
-
-					var refElement = $(currentLink.attr("href"));
-
-					if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-
-						$('.nav li a').removeClass("active");
-
-						currentLink.addClass("active");
-
-					}
-
-					else{
-
-						currentLink.removeClass("active");
-
-					}
-
-				});
-
-			}
-
-			(function($) {
-			    "use strict"; // Start of use strict
-
-			    $(".about-carousel").owlCarousel({
-			        items: 3,
-			        navigation: true,
-			        pagination: false,
-			        navigationText: [
-			            "<i class='fa fa-angle-left'></i>",
-			            "<i class='fa fa-angle-right'></i>"
-			        ],
-			    });
-
-			    $(".testimonials-carousel").owlCarousel({
-			        singleItem: true,
-			        navigation: true,
-			        pagination: true,
-			        autoHeight: true,
-			        navigationText: [
-			            "<i class='fa fa-angle-left'></i>",
-			            "<i class='fa fa-angle-right'></i>"
-			        ],
-			        transitionStyle: "backSlide"
-			    });
-
-
-			})(jQuery);
-
-		</script>
-	</body>
-	</html>
+	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/jquery.mixitup.js" type="text/javascript"></script> 
+	<script type="text/javascript" src="js/jquery.countTo.js"></script> 
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.quovolver.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js"> </script>
+	<script type="text/javascript" src="js/localisation.js"></script>
+	<script type="text/javascript" src="js/modalJquery.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>
