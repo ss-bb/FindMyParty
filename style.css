@@ -965,6 +965,7 @@ padding: 40px 0px;
 .modal-body {
     position: relative;
     padding: 5px 15px 5px 15px;
+    text-align:center;
 }
 
 .modal-footer {
@@ -1014,4 +1015,28 @@ padding: 40px 0px;
 
 .inlineblock{
 	display:inline-block;
+}
+
+.inputIcon{
+	margin: 18px 0px 0px;
+}
+
+.inputConn{
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    outline: 0px none;
+    margin: 0px;
+    padding: 0px 0px 0px 40px;
+    vertical-align: middle;
+    color: #7C8699;
+    border-width: medium medium 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #7C8699;
+    background-color: #FFF;
+    width: 224px;
+}
+.inputConn:focus{
+    outline: medium none;
 }
