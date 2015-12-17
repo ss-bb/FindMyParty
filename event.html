@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<title>Find My Trip</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+ 	<!-- Fontawesome core CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Timeline -->
+    <link href="css/timeline.css" rel="stylesheet" />
+     <!-- custom CSS here -->
+    <link href="css/styleEvent.css" rel="stylesheet" />
+</head>
+<body>
+	<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand page-scroll" href="index.html"><i class="ion-ios-analytics-outline"></i> Find My Trip</a>
+			</div>
+			<div class="navbar-collapse collapse" id="bs-navbar">
+				<ul class="nav navbar-nav">
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<button href="#" class="btn btn-primary btn-md" role="button" data-toggle="modal" data-target="#login-modal" style="margin-top:10px;">Connexion</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="titreEvent" class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<h1> Tous les events / Event dans la catégorie ... </h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div id="timeline">
+				<ul class="timeline">
+					<li class="time-label">
+						<span class="bg-orange">Evenement cette semaine
+						</span>
+						<br />
+						<br />
+					</li>
+					<li class="time-label">
+						<span class="bg-light-blue">Lundi
+						</span>
+					</li>
+					<li>
+						<i class="fa fa-glass bg-blue"></i>
+						<div class="timeline-item bg-lime">
+							<span class="time"><i class="fa fa-clock-o"></i> 20h</span>
+							<img src="images/gauthier_tete.jpg" class="pict" />
+							<h3 class="timeline-header"><a href="#">Titre</a> sous titre</h3>
+							<div class="timeline-body">
+								contenu base
+							</div>
+						</div>
+					</li>
+					<li>
+						<i class="fa fa-futbol-o bg-purple"></i>
+						<div class="timeline-item bg-orange">
+							<span class="time"><i class="fa fa-clock-o"></i> 21h</span>
+							<img src="images/romain_tete.jpg" class="pict" />
+							<h3 class="timeline-header no-border"><a href="#">titre sport</a>  sous titre</h3>
+							<div class="timeline-body">
+								contenu base
+							</div>
+						</div>
+					</li>
+					<li class="time-label">
+						<span class="bg-green">Mardi
+						</span>
+					</li>
+					<li class="time-content">
+						<i class="fa fa-university bg-maroon"></i>
+						<div class="timeline-item bg-fuchsia">
+							<span class="time"><i class="fa fa-clock-o"></i> 8h</span>
+							<img src="images/olivier_tete.jpg" class="pict" />
+							<h3 class="timeline-header"><a href="#">visite</a> Je sais pas ou</h3>
+							<div class="timeline-body">
+								contenu visite. 
+							</div>
+						</div>
+					</li>
+					<li>
+						<i class="fa fa-clock-o"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--Core JavaScript file  -->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap JavaScript file  -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
