@@ -1,0 +1,119 @@
+<link href="css/timeline.css" rel="stylesheet" />
+<link href="css/styleEvent.css" rel="stylesheet" />
+
+<div class="event margTop">
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="menuEvent">
+				<div class="menuItem">
+					<hr />
+					<p class="main-column-title">Prix</p>
+					<ul class="unstyled main-column-list margin-bottom">
+						<li>
+							<input type="radio" name="prix" value="gratuit" checked>Gratuit
+						</li>
+						<li>
+							<input type="radio" name="prix" value="payant" checked>Payant
+						</li>
+						<li>
+							<input type="radio" name="prix" value="tous" checked>Tous
+						</li>
+					</ul>
+				</div>
+				<div class="menuItem">
+					<hr />
+					<p class="main-column-title">Temps de réponse</p>
+					<ul class="unstyled main-column-list margin-bottom">
+						<li>
+							<input type="radio" name="tpsRep" value="Auto">Automatique
+						</li>
+						<li>
+							<input type="radio" name="tpsRep" value="-3">-3 de h
+						</li>
+						<li>
+							<input type="radio" name="tpsRep" value="-6">-6 de h
+						</li>
+						<li>
+							<input type="radio" name="tpsRep" value="All" checked>Tous
+						</li>
+					</ul>
+				</div>
+				<div class="menuItem">
+					<hr />
+					<p class="main-column-title">Photo</p>
+					<ul class="unstyled main-column-list margin-bottom">
+						<li>
+							<input type="radio" name="photo" value="photos">Avec photo
+						</li>
+						<li>
+							<input type="radio" name="photo" value="all" checked>Tous
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-10">
+			<div id="titreEvent" class="row">
+				<div class="col-sm-12">
+					<h1>Les evenements de la semaine</h1>
+				</div>
+				<div class="col-sm-10 col-sm-offset-1">
+					<div id="timeline">
+						<ul class="timeline">
+							<li class="time-label">
+								<span class="bg-light-blue">Evenement cette semaine
+								</span>
+								<br />
+								<br />
+							</li>
+							<li class="time-label">
+								<span class="bg-light-blue">Lundi
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-glass bg-light-blue"></i>
+								<div class="timeline-item bg-light-blue">
+									<span class="time"><i class="fa fa-clock-o"></i> 20h</span>
+									<img src="images/gauthier_tete.jpg" class="pict" />
+									<h3 class="timeline-header"><a href="#/event/13">Titre</a> sous titre</h3>
+									<div class="timeline-body">
+										contenu base
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-futbol-o bg-light-blue"></i>
+								<div class="timeline-item bg-light-blue">
+									<span class="time"><i class="fa fa-clock-o"></i> 21h</span>
+									<img src="images/romain_tete.jpg" class="pict" />
+									<h3 class="timeline-header no-border"><a href="#/event/13">titre sport</a>  sous titre</h3>
+									<div class="timeline-body">
+										contenu base
+									</div>
+								</div>
+							</li>
+							<li class="time-label">
+								<span class="bg-light-blue">Mardi
+								</span>
+							</li>
+							<li class="time-content">
+								<i class="fa fa-university bg-light-blue"></i>
+								<div class="timeline-item bg-light-blue">
+									<span class="time"><i class="fa fa-clock-o"></i> 8h</span>
+									<img src="images/olivier_tete.jpg" class="pict" />
+									<h3 class="timeline-header"><a href="#/event/13">visite</a> Je sais pas ou</h3>
+									<div class="timeline-body">
+										contenu visite. 
+									</div>
+								</div>
+							</li>
+							<li>
+								<i class="fa fa-clock-o"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

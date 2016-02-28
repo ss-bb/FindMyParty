@@ -1,0 +1,245 @@
+<section class="container-fluid banner text-center row" id="banner"> 
+	<div class="col-md-12 line">
+		<div class="tablebox">
+			<div class="banner-text" id="bannertext">
+				<h1 class="hostyle" id="heads">Get OUT!</h1>
+				<p class="pstyle">Votre vie sociale mérite mieux qu'un écran</p>
+				<p class="pstyle" id="localisation"></p>
+				<a href="#features" class="page-scroll arrow active"><i class="fa fa-angle-down"></i></a> 
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="features" id="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="alldesc">
+					<div class="col-md-6 col-sm-6 col-xs-12 centertext">
+						<p class="all-td">veux tu vraiment garder</p>
+						<h2 style="color:#fff">cette partie?</h2>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p class="desc">Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 featurebox">
+				<div class="fh-desc">
+					<h3>Something</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante. Sed turpis felis, sagittis at risus ut, luctus feugiat ipsum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="gallery" id="categorie">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="alldesc">
+					<div class="col-md-6 col-sm-6 col-xs-12 centertext">
+						<p class="all-td">Notre liste de catégorie</p>
+						<h2>Catégorie</h2>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p class="desc">Description catégorie, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a suscipit nisl. Etiam a facilisis ante. Sed turpis felis, sagittis at risus ut, luctus feugiat ipsum. Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="galleryimg" id="galleryimg">
+				<div class="grid col-md-4 col-sm-6 col-xs-6" ng-repeat="item in categories">
+					<figure class="effect-Beauty">
+						<img ng-src="images/{{item.image}}" alt="{{item.alt}}"/>
+						<figcaption>
+							<h2>{{item.titre1}}<br/><span>{{item.titre2}}<span></h2>
+							<p>{{item.description}}</p>
+							<a ng-href="{{item.href}}"></a>
+						</figcaption>			
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section  class="testimonials bg-gray" id="testimonials">
+	<div class="container wow fadeIn">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="alldesc left">
+					<div class="col-md-6 col-sm-6 col-xs-12 centertext">
+						<p class="all-td">Les retours de nos </p>
+						<h2>Testimonial</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-10 col-lg-offset-1">
+				<div class="testimonials-carousel">
+					<div class="item">
+						<div class="row">
+							<div class="col-lg-12">
+								<p class="lead">"CA MARCHE !"</p>
+								<hr class="colored">
+								<p class="quote">C'est incroyable, c'est magnifique, c'est beau , ca marche , c'est fait, je rentre chez ma mere.</p>
+								<div class="testimonial-info">
+									<div class="testimonial-img">
+										<img src="images/olivier_tete.jpg" class="img-circle img-responsive" alt="">
+									</div>
+									<div class="testimonial-author">
+										<span class="name">Olivier goyon</span>
+										<p class="small">un nain connu</p>
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-lg-12">
+								<p class="lead">"Lorem ipsum dolor sit amet"</p>
+								<hr class="colored">
+								<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+								<div class="testimonial-info">
+									<div class="testimonial-img">
+										<img src="images/romain_tete.jpg" class="img-circle img-responsive" alt="">
+									</div>
+									<div class="testimonial-author">
+										<span class="name">Ave Cesar</span>
+										<p class="small">Empereur de Rome</p>
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-lg-12">
+								<p class="lead">"Je sais pas"</p>
+								<hr class="colored">
+								<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+								<div class="testimonial-info">
+									<div class="testimonial-img">
+										<img src="images/gauthier_tete.jpg" class="img-circle img-responsive" alt="">
+									</div>
+									<div class="testimonial-author">
+										<span class="name">Gau Machand</span>
+										<p class="small">CEO</p>
+										<div class="stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" align="center">
+				<img class="img-circle" id="img_logo" src="images/logo.png">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</button>
+			</div>
+			<div id="div-forms">
+				<form id="login-form">
+					<div class="modal-body">
+						<div class="inputIcon">
+							<i class="fa fa-user"></i><input id="login_username" type="text" placeholder="Username" class="inputConn" required>
+						</div>
+						<div class="inputIcon">
+							<i class="fa fa-lock"></i><input id="login_password" type="password" placeholder="Password" class="inputConn" required>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox">Remember me</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+						</div>
+						<div>
+							<button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+							<button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+						</div>
+					</div>
+				</form>
+				<!-- End # Login Form -->
+				
+				<!-- Begin | Lost Password Form -->
+				<form id="lost-form" style="display:none;">
+					<div class="modal-body">
+						<div class="inputIcon">
+							<i class="fa fa-envelope"></i><input id="lost_email" type="text" class="inputConn" placeholder="E-Mail" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+						</div>
+						<div>
+							<button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+							<button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+						</div>
+					</div>
+				</form>
+				<!-- End | Lost Password Form -->
+				
+				<!-- Begin | Register Form -->
+				<form id="register-form" style="display:none;">
+					<div class="modal-body">
+						<div class="inputIcon">
+							<i class="fa fa-user"></i><input id="register_username" type="text" placeholder="Username" class="inputConn" required>
+						</div>
+						<div class="inputIcon">
+							<i class="fa fa-envelope"></i><input id="register_email" type="text" placeholder="E-Mail" class="inputConn" required>
+						</div>
+						<div class="inputIcon">
+							<i class="fa fa-lock"></i><input id="register_password" type="password" placeholder="Password" class="inputConn" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+						</div>
+						<div>
+							<button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+							<button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+						</div>
+					</div>
+				</form>
+				<!-- End | Register Form -->
+				
+			</div>
+			<!-- End # DIV Form -->
+			
+		</div>
+	</div>
+</div>

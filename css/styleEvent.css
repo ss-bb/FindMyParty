@@ -1,6 +1,4 @@
-﻿
-
-/*====================================
+﻿/*====================================
  Free To Use For Personal And Commercial Usage
 Author: http://binarytheme.com
  License: Open source - MIT
@@ -8,14 +6,10 @@ Author: http://binarytheme.com
  Share Us if You Like Us and Enjoy Our Codes For Free Always.
 ======================================*/
 
-
 /*=======================================
     GENERAL STYLES
 ==================================================*/
-body {
-    font-family:'Open Sans', sans-serif;
-    font-size:14px;
-}
+
 .text-center {
     text-align:center;
 }
@@ -28,15 +22,28 @@ body {
 }
 
 p {
-    font-weight:400;
-    line-height:29px;
-    padding-bottom:50px;
 }
 .margin-bot {
     margin-bottom:50px;
 }
 
-.row{
-    margin-right: 0;
-    margin-left: 0;
+.menuEvent{
+    border:thin solid grey;
+    border-radius: 5px;
+    margin-top:30px;
+    background-color:#eee;
+}
+
+ul li{
+    list-style: none;
+}
+
+.main-column-title{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.menuItem ul{
+    padding:5px;
+    margin:5px;
 }

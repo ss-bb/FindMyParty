@@ -35,7 +35,7 @@ function geocodeLatLng(latitude,longitude) {
 			if (results[1]) {
 				console.log(results[1]);
 				console.log(results[1].formatted_address);
-				$('#localisation').text(results[1].formatted_address);
+				//$('#localisation').text(results[1].formatted_address);
 			} else {
 				$('#localisation').text('Ville introuvable');
 			}
